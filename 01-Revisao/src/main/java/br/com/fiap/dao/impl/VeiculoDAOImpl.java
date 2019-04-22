@@ -3,7 +3,7 @@ package br.com.fiap.dao.impl;
 import javax.persistence.EntityManager;
 
 import br.com.fiap.dao.VeiculoDAO;
-import br.com.fiap.intity.Veiculo;
+import br.com.fiap.entity.Veiculo;
 
 public class VeiculoDAOImpl extends GenericDAOImpl<Veiculo, Long> implements VeiculoDAO{
 

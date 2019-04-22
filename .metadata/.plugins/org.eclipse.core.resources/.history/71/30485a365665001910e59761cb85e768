@@ -1,0 +1,14 @@
+package br.com.fiap.impl;
+
+import javax.persistence.EntityManager;
+
+import br.com.fiap.dao.impl.GenericDAOImpl;
+
+public class Passageiro extends GenericDAOImpl<Passageiro, Long> implements br.com.fiap.dao.Passageiro{
+
+	public Passageiro(EntityManager em) {
+		super(em);
+		// TODO Auto-generated constructor stub
+	}
+
+}

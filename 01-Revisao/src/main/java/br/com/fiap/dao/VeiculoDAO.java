@@ -1,6 +1,6 @@
 package br.com.fiap.dao;
 
-import br.com.fiap.intity.Veiculo;
+import br.com.fiap.entity.Veiculo;
 
 public interface VeiculoDAO extends GenericDAO<Veiculo, Long>{
 

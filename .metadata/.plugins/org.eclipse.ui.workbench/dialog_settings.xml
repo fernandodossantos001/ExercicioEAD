@@ -6,23 +6,19 @@
 		<list key="textEntries">
 			<item value="1"/>
 			<item value="2"/>
-			<item value="1"/>
 		</list>
 		<list key="orderedElements">
 			<item value="org.eclipse.jdt.ui.edit.text.java.create.getter.setter"/>
 			<item value="org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields"/>
-			<item value="org.eclipse.jdt.ui.edit.text.java.add.unimplemented.constructors"/>
 		</list>
 		<list key="orderedProviders">
-			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.commands"/>
 			<item value="org.eclipse.ui.commands"/>
 		</list>
 		<list key="textArray">
 			<item value="gga"/>
-			<item value="constructor"/>
-			<item value="co"/>
-			<item value="construc"/>
+			<item value="constr"/>
+			<item value="con"/>
 		</list>
 	</section>
 	<section name="NewWizardAction">

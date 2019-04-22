@@ -1,0 +1,32 @@
+package br.com.fiap.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="T_CORRIDA")
+@SequenceGenerator(name="corrida",sequenceName="SQ_T_CORRIDA")
+public class Corrida {
+	
+	@Id
+	@Column(name="cd_corrida")
+	@GeneratedValue(generator="corrida",strategy=GenerationType.SEQUENCE)
+	private Long id;
+	
+	
+	@Column(name="ds_origem",length=150)
+	private String origem;
+	
+	
+	@Column(name="ds_destino")
+	private String destino;
+	
+	
+	@Column(name="dt_corrida")
+	private Calendar dataCorrida;
+}

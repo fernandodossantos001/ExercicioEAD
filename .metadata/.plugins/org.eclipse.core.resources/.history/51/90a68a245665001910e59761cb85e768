@@ -1,0 +1,7 @@
+package br.com.fiap.impl;
+
+import br.com.fiap.dao.impl.GenericDAOImpl;
+
+public class Passageiro extends GenericDAOImpl<Passageiro, Long> implements Passageiro{
+
+}
