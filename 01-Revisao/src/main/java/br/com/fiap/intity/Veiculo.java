@@ -1,0 +1,94 @@
+package br.com.fiap.intity;
+
+import java.util.Calendar;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Lob;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+@Entity
+@Table(name="T_VEICULO")
+@SequenceGenerator(name="veiculo",sequenceName="SQ_T_VEICULO",allocationSize=1)
+public class Veiculo {
+	
+	@Id
+	@GeneratedValue(generator="veiculo",strategy=GenerationType.SEQUENCE)
+	@Column(name="nr_carteira")
+	private Long id;
+	
+	@Column(name="nm_motorista",length=150,nullable=false)
+	private String nomeMotorista;
+	
+	@Column(name="dt_nascimento")
+	@Temporal(TemporalType.DATE)
+	private Calendar dataNascimento;
+	
+	@Lob
+	@Column(name="fl_carteira")
+	private byte[] fotoMotorista;
+	
+	@Column(name="ds_genero")
+	private String genero;
+	
+	public Veiculo() {
+		
+	}
+
+	public Veiculo(Long id, String nomeMotorista, Calendar dataNascimento, byte[] fotoMotorista, String genero) {
+		this.id = id;
+		this.nomeMotorista = nomeMotorista;
+		this.dataNascimento = dataNascimento;
+		this.fotoMotorista = fotoMotorista;
+		this.genero = genero;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getNomeMotorista() {
+		return nomeMotorista;
+	}
+
+	public void setNomeMotorista(String nomeMotorista) {
+		this.nomeMotorista = nomeMotorista;
+	}
+
+	public Calendar getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(Calendar dataNascimento) {
+		this.dataNascimento = dataNascimento;
+	}
+
+	public byte[] getFotoMotorista() {
+		return fotoMotorista;
+	}
+
+	public void setFotoMotorista(byte[] fotoMotorista) {
+		this.fotoMotorista = fotoMotorista;
+	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	
+	
+	
+}

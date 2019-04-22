@@ -1,0 +1,6 @@
+package br.com.fiap.dao;
+
+public interface GenericDAO <T,K>{
+	void save(T tabela);
+
+}

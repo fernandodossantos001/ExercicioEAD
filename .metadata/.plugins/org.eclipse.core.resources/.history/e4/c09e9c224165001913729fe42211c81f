@@ -1,0 +1,47 @@
+package br.com.fiap.dao.impl;
+
+import java.lang.reflect.ParameterizedType;
+
+import javax.persistence.EntityManager;
+
+import br.com.fiap.dao.GenericDAO;
+
+public abstract class GenericDAOImpl<T, K> implements GenericDAO<T, K> {
+	private EntityManager em;
+
+	private Class<T> clazz;
+	
+	@SuppressWarnings("all")
+	public GenericDAOImpl(EntityManager em) {
+		this.em = em;
+		this.clazz = (Class<T>) ((ParameterizedType) 
+				getClass().getGenericSuperclass())
+					.getActualTypeArguments()[0];
+	}
+
+	public void cadastrar(T tabela) {
+		em.persist(tabela);
+
+	}
+
+	public void alterar(T tabela) {
+		em.refresh(tabela);
+
+	}
+
+	public T buscar(K id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void remover(K id) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void commit() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

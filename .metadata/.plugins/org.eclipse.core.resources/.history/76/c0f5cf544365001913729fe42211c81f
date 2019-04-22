@@ -1,0 +1,30 @@
+package br.com.fiap.intity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="T_VEICULO")
+@SequenceGenerator(name="veiculo",sequenceName="SQ_T_VEICULO",allocationSize=1)
+public class Motorista {
+
+	@Id
+	@Column(name="cd_veiculo")
+	private Long id;
+	
+	@Column(name="ds_placa",length=9,nullable=false)
+	private String placa;
+	
+	@Column(name="ds_cor",length=20)
+	private String cor;
+	
+	@Column(name="nr_ano")
+	private int ano;
+	
+	public Motorista() {
+		
+	}
+}

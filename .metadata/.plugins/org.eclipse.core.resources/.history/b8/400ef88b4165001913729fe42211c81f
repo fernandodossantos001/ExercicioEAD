@@ -1,0 +1,10 @@
+package br.com.fiap.dao;
+
+public interface GenericDAO <T,K>{
+	void cadastrar(T tabela);
+	void alterar(T tabela);
+	T buscar(K id);
+	void remover(K id);
+	void commit();
+
+}

@@ -1,0 +1,10 @@
+package br.com.fiap.intity;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="T_VEICULO")
+public class Motorista {
+
+}

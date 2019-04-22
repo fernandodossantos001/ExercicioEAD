@@ -1,0 +1,32 @@
+package br.com.fiap.dao.impl;
+
+import br.com.fiap.dao.GenericDAO;
+
+public abstract class GenericDAOImpl implements GenericDAO<T, K>{
+
+	public void cadastrar(T tabela) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void alterar(T tabela) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public T buscar(K id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void remover(K id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void commit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
