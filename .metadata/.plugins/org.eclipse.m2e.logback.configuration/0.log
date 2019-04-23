@@ -1409,3 +1409,246 @@ Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-sec
 2019-04-22 20:29:46,414 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
 2019-04-22 20:29:46,415 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-04-22 20:29:46,415 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 19:12:29,608 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2019-04-23 19:12:30,445 [Worker-7] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547) ~[org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56) [org.eclipse.core.jobs_3.9.3.v20180115-1757.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_171]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_171]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_171]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 9 common frames omitted
+2019-04-23 19:12:30,945 [Worker-7] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547) ~[org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56) [org.eclipse.core.jobs_3.9.3.v20180115-1757.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_171]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_171]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_171]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 9 common frames omitted
+2019-04-23 19:12:31,194 [Worker-7] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server central: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547) ~[org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56) [org.eclipse.core.jobs_3.9.3.v20180115-1757.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_171]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_171]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_171]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 9 common frames omitted
+2019-04-23 19:12:31,197 [Worker-7] WARN  o.e.m.c.internal.embedder.MavenImpl - Failed to decrypt password for server snapshots: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:121) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:107) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.apache.maven.settings.crypto.DefaultSettingsDecrypter.decrypt(DefaultSettingsDecrypter.java:63) ~[maven-settings-builder-3.3.9.jar:3.3.9]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.decryptPassword(MavenImpl.java:547) ~[org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.getAuthenticationInfo(RepositoryRegistry.java:214) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistry.updateRegistry(RepositoryRegistry.java:258) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.m2e.core.internal.repository.RepositoryRegistryUpdateJob.run(RepositoryRegistryUpdateJob.java:47) [org.eclipse.m2e.core_1.8.3.20180227-2137.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56) [org.eclipse.core.jobs_3.9.3.v20180115-1757.jar:na]
+Caused by: org.sonatype.plexus.components.sec.dispatcher.SecDispatcherException: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:69) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.getSec(DefaultSecDispatcher.java:206) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.DefaultSecDispatcher.decrypt(DefaultSecDispatcher.java:90) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 7 common frames omitted
+Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-security.xml (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method) ~[na:1.8.0_171]
+	at java.io.FileInputStream.open(Unknown Source) ~[na:1.8.0_171]
+	at java.io.FileInputStream.<init>(Unknown Source) ~[na:1.8.0_171]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.toStream(SecUtil.java:100) ~[plexus-sec-dispatcher-1.3.jar:na]
+	at org.sonatype.plexus.components.sec.dispatcher.SecUtil.read(SecUtil.java:56) ~[plexus-sec-dispatcher-1.3.jar:na]
+	... 9 common frames omitted
+2019-04-23 19:12:33,069 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2019-04-23 19:12:33,546 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/h2database/h2/1.4.197/h2-1.4.197.pom
+2019-04-23 19:12:33,556 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/h2database/h2/1.4.197/h2-1.4.197.pom
+2019-04-23 19:12:33,718 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/h2database/h2/1.4.197/h2-1.4.197.jar
+2019-04-23 19:12:33,774 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/h2database/h2/1.4.197/h2-1.4.197.jar
+2019-04-23 19:12:34,727 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+2019-04-23 19:12:34,748 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.pom
+2019-04-23 19:12:34,761 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
+2019-04-23 19:12:34,787 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
+2019-04-23 19:12:34,884 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+2019-04-23 19:12:34,899 [Worker-11] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/plugins/maven-compiler-plugin/3.1/maven-compiler-plugin-3.1.jar
+2019-04-23 19:12:39,383 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 19:12:39,383 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 19:12:39,386 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 19:12:39,386 [Worker-11] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 19:12:42,910 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+2019-04-23 19:12:42,921 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.pom
+2019-04-23 19:12:42,935 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+2019-04-23 19:12:42,943 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven/2.0.9/maven-2.0.9.pom
+2019-04-23 19:12:42,959 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-parent/8/maven-parent-8.pom
+2019-04-23 19:12:42,971 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-parent/8/maven-parent-8.pom
+2019-04-23 19:12:42,988 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/apache/4/apache-4.pom
+2019-04-23 19:12:42,996 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/apache/4/apache-4.pom
+2019-04-23 19:12:43,021 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+2019-04-23 19:12:43,029 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.pom
+2019-04-23 19:12:43,045 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2019-04-23 19:12:43,055 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.pom
+2019-04-23 19:12:43,073 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+2019-04-23 19:12:43,083 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.pom
+2019-04-23 19:12:43,101 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+2019-04-23 19:12:43,109 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.pom
+2019-04-23 19:12:43,126 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+2019-04-23 19:12:43,135 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.pom
+2019-04-23 19:12:43,171 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+2019-04-23 19:12:43,198 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.pom
+2019-04-23 19:12:43,214 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+2019-04-23 19:12:43,229 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.pom
+2019-04-23 19:12:43,245 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+2019-04-23 19:12:43,254 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.pom
+2019-04-23 19:12:43,273 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+2019-04-23 19:12:43,282 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.pom
+2019-04-23 19:12:43,304 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+2019-04-23 19:12:43,312 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.pom
+2019-04-23 19:12:43,333 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+2019-04-23 19:12:43,340 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.pom
+2019-04-23 19:12:43,360 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+2019-04-23 19:12:43,367 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.pom
+2019-04-23 19:12:43,384 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+2019-04-23 19:12:43,396 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.pom
+2019-04-23 19:12:43,425 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+2019-04-23 19:12:43,433 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.pom
+2019-04-23 19:12:43,454 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2019-04-23 19:12:43,462 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.pom
+2019-04-23 19:12:44,294 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+2019-04-23 19:12:44,313 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom
+2019-04-23 19:12:44,326 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+2019-04-23 19:12:44,334 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-containers/1.5.5/plexus-containers-1.5.5.pom
+2019-04-23 19:12:44,388 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+2019-04-23 19:12:44,402 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.pom
+2019-04-23 19:12:44,420 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+2019-04-23 19:12:44,429 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler/2.2/plexus-compiler-2.2.pom
+2019-04-23 19:12:44,527 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+2019-04-23 19:12:44,536 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/3.0.8/plexus-utils-3.0.8.pom
+2019-04-23 19:12:44,578 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+2019-04-23 19:12:44,586 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.pom
+2019-04-23 19:12:44,602 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+2019-04-23 19:12:44,623 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.pom
+2019-04-23 19:12:44,640 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+2019-04-23 19:12:44,648 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compilers/2.2/plexus-compilers-2.2.pom
+2019-04-23 19:12:44,665 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+2019-04-23 19:12:44,673 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.pom
+2019-04-23 19:12:44,688 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+2019-04-23 19:12:44,699 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/1.4.5/plexus-utils-1.4.5.pom
+2019-04-23 19:12:44,714 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+2019-04-23 19:12:44,744 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.pom
+2019-04-23 19:12:44,772 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+2019-04-23 19:12:44,782 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.pom
+2019-04-23 19:12:44,802 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+2019-04-23 19:12:44,812 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/xbean/xbean/3.4/xbean-3.4.pom
+2019-04-23 19:12:44,829 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/log4j/log4j/1.2.12/log4j-1.2.12.pom
+2019-04-23 19:12:44,838 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/log4j/log4j/1.2.12/log4j-1.2.12.pom
+2019-04-23 19:12:44,853 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+2019-04-23 19:12:44,861 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.pom
+2019-04-23 19:12:44,877 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+2019-04-23 19:12:44,886 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/collections/google-collections/1.0/google-collections-1.0.pom
+2019-04-23 19:12:44,906 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/google/1/google-1.pom
+2019-04-23 19:12:44,916 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/google/1/google-1.pom
+2019-04-23 19:12:44,951 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/junit/junit/3.8.2/junit-3.8.2.pom
+2019-04-23 19:12:44,960 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/junit/junit/3.8.2/junit-3.8.2.pom
+2019-04-23 19:12:45,009 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar
+2019-04-23 19:12:45,018 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-api/2.0.9/maven-plugin-api-2.0.9.jar
+2019-04-23 19:12:45,408 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar
+2019-04-23 19:12:45,417 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact/2.0.9/maven-artifact-2.0.9.jar
+2019-04-23 19:12:45,427 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+2019-04-23 19:12:45,438 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-utils/1.5.1/plexus-utils-1.5.1.jar
+2019-04-23 19:12:45,447 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar
+2019-04-23 19:12:45,458 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-core/2.0.9/maven-core-2.0.9.jar
+2019-04-23 19:12:45,467 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar
+2019-04-23 19:12:45,475 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-settings/2.0.9/maven-settings-2.0.9.jar
+2019-04-23 19:12:45,485 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
+2019-04-23 19:12:45,493 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-parameter-documenter/2.0.9/maven-plugin-parameter-documenter-2.0.9.jar
+2019-04-23 19:12:45,502 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar
+2019-04-23 19:12:45,510 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-profile/2.0.9/maven-profile-2.0.9.jar
+2019-04-23 19:12:45,520 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar
+2019-04-23 19:12:45,528 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-model/2.0.9/maven-model-2.0.9.jar
+2019-04-23 19:12:45,538 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar
+2019-04-23 19:12:45,547 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-repository-metadata/2.0.9/maven-repository-metadata-2.0.9.jar
+2019-04-23 19:12:45,559 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+2019-04-23 19:12:45,567 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-error-diagnostics/2.0.9/maven-error-diagnostics-2.0.9.jar
+2019-04-23 19:12:45,576 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+2019-04-23 19:12:45,593 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-project/2.0.9/maven-project-2.0.9.jar
+2019-04-23 19:12:45,602 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar
+2019-04-23 19:12:45,610 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-registry/2.0.9/maven-plugin-registry-2.0.9.jar
+2019-04-23 19:12:45,620 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar
+2019-04-23 19:12:45,632 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-plugin-descriptor/2.0.9/maven-plugin-descriptor-2.0.9.jar
+2019-04-23 19:12:45,645 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+2019-04-23 19:12:45,654 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-artifact-manager/2.0.9/maven-artifact-manager-2.0.9.jar
+2019-04-23 19:12:45,664 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar
+2019-04-23 19:12:45,673 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-monitor/2.0.9/maven-monitor-2.0.9.jar
+2019-04-23 19:12:45,683 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar
+2019-04-23 19:12:45,691 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/maven-toolchain/1.0/maven-toolchain-1.0.jar
+2019-04-23 19:12:45,700 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
+2019-04-23 19:12:45,711 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/maven/shared/maven-shared-utils/0.1/maven-shared-utils-0.1.jar
+2019-04-23 19:12:45,720 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+2019-04-23 19:12:45,728 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/code/findbugs/jsr305/2.0.1/jsr305-2.0.1.jar
+2019-04-23 19:12:45,738 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+2019-04-23 19:12:45,789 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar
+2019-04-23 19:12:45,798 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+2019-04-23 19:12:45,806 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-api/2.2/plexus-compiler-api-2.2.jar
+2019-04-23 19:12:45,815 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+2019-04-23 19:12:45,823 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-manager/2.2/plexus-compiler-manager-2.2.jar
+2019-04-23 19:12:45,832 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+2019-04-23 19:12:45,841 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-compiler-javac/2.2/plexus-compiler-javac-2.2.jar
+2019-04-23 19:12:45,851 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+2019-04-23 19:12:45,864 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-container-default/1.5.5/plexus-container-default-1.5.5.jar
+2019-04-23 19:12:45,873 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+2019-04-23 19:12:45,881 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/codehaus/plexus/plexus-classworlds/2.2.2/plexus-classworlds-2.2.2.jar
+2019-04-23 19:12:45,892 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+2019-04-23 19:12:45,905 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/org/apache/xbean/xbean-reflect/3.4/xbean-reflect-3.4.jar
+2019-04-23 19:12:45,914 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/log4j/log4j/1.2.12/log4j-1.2.12.jar
+2019-04-23 19:12:45,930 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/log4j/log4j/1.2.12/log4j-1.2.12.jar
+2019-04-23 19:12:45,938 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+2019-04-23 19:12:45,948 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar
+2019-04-23 19:12:45,958 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+2019-04-23 19:12:45,987 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/com/google/collections/google-collections/1.0/google-collections-1.0.jar
+2019-04-23 19:12:45,996 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/junit/junit/3.8.2/junit-3.8.2.jar
+2019-04-23 19:12:46,006 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://fiaprepodevops.fiap.com.br:8040/artifactory/libs-release/junit/junit/3.8.2/junit-3.8.2.jar
+2019-04-23 19:12:49,483 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: br.com.fiap:01-Revisao:0.0.1-SNAPSHOT @ C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\pom.xml.
+2019-04-23 19:12:49,837 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 19:12:49,837 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 19:12:49,839 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 19:12:49,839 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 19:13:14,798 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 19:13:14,798 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
