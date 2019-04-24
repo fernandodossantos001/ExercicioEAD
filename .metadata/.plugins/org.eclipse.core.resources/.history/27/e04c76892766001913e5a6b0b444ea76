@@ -48,14 +48,7 @@ public class Motorista {
 		this.fotoMotorista = fotoMotorista;
 		this.genero = genero;
 	}
-	
-	public Motorista(String nomeMotorista, Calendar dataNascimento, byte[] fotoMotorista, String genero) {
-		this.nomeMotorista = nomeMotorista;
-		this.dataNascimento = dataNascimento;
-		this.fotoMotorista = fotoMotorista;
-		this.genero = genero;
-	}
-	
+
 	public Long getId() {
 		return id;
 	}

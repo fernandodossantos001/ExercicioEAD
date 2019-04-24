@@ -50,6 +50,7 @@ public class Motorista {
 	}
 	
 	public Motorista(String nomeMotorista, Calendar dataNascimento, byte[] fotoMotorista, String genero) {
+		this.id = id;
 		this.nomeMotorista = nomeMotorista;
 		this.dataNascimento = dataNascimento;
 		this.fotoMotorista = fotoMotorista;

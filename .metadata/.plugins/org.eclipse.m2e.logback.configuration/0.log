@@ -1796,3 +1796,85 @@ Caused by: java.io.FileNotFoundException: C:\Users\logonrmlocal\.m2\settings-sec
 2019-04-23 21:23:10,790 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
 2019-04-23 21:23:16,730 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-04-23 21:23:16,730 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:23:16,765 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:23:16,766 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:25:06,491 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:25:06,491 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:25:06,492 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:25:06,492 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:25:35,127 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:25:35,128 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:25:35,128 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:25:35,129 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:26:00,895 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:26:00,895 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:26:00,896 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:26:00,896 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:26:01,933 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:26:01,934 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:26:01,935 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:26:01,936 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:30:28,349 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:30:28,349 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:30:28,349 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:30:28,349 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:31:18,455 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:18,455 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:31:18,456 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:18,456 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:31:22,361 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:22,361 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:31:22,363 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:22,363 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:31:34,186 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:34,186 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:31:34,187 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:34,187 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:31:40,628 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:40,628 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:31:40,629 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:40,629 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:31:50,024 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:50,024 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:31:50,025 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:31:50,025 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:32:22,095 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:32:22,095 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:32:22,096 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:32:22,096 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:33:01,133 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:33:01,134 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:33:01,134 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:33:01,135 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:33:08,603 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:33:08,603 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:33:08,603 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:33:08,604 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:33:12,521 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:33:12,522 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:33:12,522 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:33:12,522 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:34:19,694 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:34:19,694 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:34:19,695 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:34:19,696 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:34:25,816 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:34:25,816 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:34:25,818 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:34:25,818 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:35:01,038 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:35:01,038 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:35:01,039 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:35:01,039 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:35:52,037 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:35:52,037 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:35:52,038 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:35:52,038 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:37:29,325 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:37:29,325 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:37:29,326 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:37:29,326 [Worker-39] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources
+2019-04-23 21:37:37,244 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:37:37,245 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\main\resources
+2019-04-23 21:37:37,246 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-04-23 21:37:37,247 [Worker-36] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\logonrmlocal\Desktop\ead\ExercicioEAD\01-Revisao\src\test\resources

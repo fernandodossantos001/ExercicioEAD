@@ -6,8 +6,6 @@ import java.util.GregorianCalendar;
 import br.com.fiap.dao.MotoristaDAO;
 import br.com.fiap.dao.impl.MotoristaDAOImpl;
 import br.com.fiap.entity.Motorista;
-import br.com.fiap.exception.CodigoInvalidoException;
-import br.com.fiap.exception.CommitException;
 import br.com.fiap.singleton.EntityManagerFactorySingleton;
 
 public class MotoristaDAOTest {
@@ -19,23 +17,6 @@ public class MotoristaDAOTest {
 				null, "Masculino"); 
 		
 		dao.cadastrar(motorista);
-		try {
-			dao.commit();
-		} catch (CommitException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		Motorista m = new Motorista();
-		try {
-			m = dao.buscar(motorista.getId());
-		} catch (CodigoInvalidoException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		
-		System.out.println("-------------------------------------------------");
-		System.out.println(m.getId());
 		
 	}
 

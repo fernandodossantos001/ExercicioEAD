@@ -33,10 +33,6 @@ public class MotoristaDAOTest {
 			e.printStackTrace();
 		}
 		
-		
-		System.out.println("-------------------------------------------------");
-		System.out.println(m.getId());
-		
 	}
 
 }

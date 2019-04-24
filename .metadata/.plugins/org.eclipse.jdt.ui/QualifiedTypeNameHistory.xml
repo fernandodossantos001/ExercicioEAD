@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="br.com.fiap.singleton.EntityManagerFactoreSingleton"/>
-<fullyQualifiedTypeName name="br.com.fiap.singleton.EntityManagerFactorySingleton"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
 <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
 <fullyQualifiedTypeName name="java.lang.reflect.ParameterizedType"/>
@@ -25,9 +24,14 @@
 <fullyQualifiedTypeName name="br.com.fiap.dao.CorridaDAO"/>
 <fullyQualifiedTypeName name="br.com.fiap.entity.Pagamento"/>
 <fullyQualifiedTypeName name="br.com.fiap.dao.PagamentoDAO"/>
-<fullyQualifiedTypeName name="br.com.fiap.dao.GenericDAO"/>
 <fullyQualifiedTypeName name="br.com.fiap.dao.impl.GenericDAOImpl"/>
 <fullyQualifiedTypeName name="br.com.fiap.dao.Passageiro"/>
 <fullyQualifiedTypeName name="br.com.fiap.dao.PassageiroDAO"/>
 <fullyQualifiedTypeName name="br.com.fiap.entity.Passageiro"/>
+<fullyQualifiedTypeName name="br.com.fiap.singleton.EntityManagerFactorySingleton"/>
+<fullyQualifiedTypeName name="br.com.fiap.entity.Veiculo"/>
+<fullyQualifiedTypeName name="br.com.fiap.entity.Motorista"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="br.com.fiap.dao.GenericDAO"/>
 </qualifiedTypeNameHistroy>

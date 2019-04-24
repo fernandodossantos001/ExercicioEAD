@@ -34,7 +34,6 @@ public class MotoristaDAOTest {
 		}
 		
 		
-		System.out.println("-------------------------------------------------");
 		System.out.println(m.getId());
 		
 	}
