@@ -1,7 +1,6 @@
 package br.com.fiap.dao.impl;
 
-import javax.persistence.EntityManager;
-
+import javax.persistence.EntityManager; 
 import br.com.fiap.dao.VeiculoDAO;
 import br.com.fiap.entity.Veiculo;
 

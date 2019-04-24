@@ -10,7 +10,7 @@ public class EntityManagerFactorySingleton {
 		
 	}
 	
-	public EntityManagerFactory getInstance() {
+	public static EntityManagerFactory getInstance() {
 		if(em == null) {
 			em = Persistence.createEntityManagerFactory("");
 		}

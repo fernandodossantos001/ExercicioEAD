@@ -37,7 +37,7 @@ public abstract class GenericDAOImpl<T, K> implements GenericDAO<T, K> {
 		if (tabela == null) {
 			throw new CodigoInvalidoException(); 
 		}
-		return null;
+		return tabela;
 	}
 
 	public void remover(K id) throws CodigoInvalidoException {

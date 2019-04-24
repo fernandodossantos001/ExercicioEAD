@@ -1,45 +1,53 @@
 package br.com.fiap.entity;
 
+import java.util.Calendar;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
-
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name="T_MOTORISTA")
 @SequenceGenerator(name="motorista",sequenceName="SQ_T_VEICULO",allocationSize=1)
 public class Motorista {
-
+	
 	@Id
-	@Column(name="cd_veiculo")
 	@GeneratedValue(generator="motorista",strategy=GenerationType.SEQUENCE)
+	@Column(name="nr_carteira")
 	private Long id;
 	
-	@Column(name="ds_placa",length=9,nullable=false)
-	private String placa;
+	@Column(name="nm_motorista",length=150,nullable=false)
+	private String nomeMotorista;
 	
-	@Column(name="ds_cor",length=20)
-	private String cor;
+	@Column(name="dt_nascimento")
+	@Temporal(TemporalType.DATE)
+	private Calendar dataNascimento;
 	
-	@Column(name="nr_ano")
-	private int ano;
+	@Lob
+	@Column(name="fl_carteira")
+	private byte[] fotoMotorista;
+	
+	@Column(name="ds_genero")
+	private String genero;
 	
 	public Motorista() {
 		
 	}
-	
 
-	public Motorista(Long id, String placa, String cor, int ano) {
+	public Motorista(Long id, String nomeMotorista, Calendar dataNascimento, byte[] fotoMotorista, String genero) {
 		this.id = id;
-		this.placa = placa;
-		this.cor = cor;
-		this.ano = ano;
+		this.nomeMotorista = nomeMotorista;
+		this.dataNascimento = dataNascimento;
+		this.fotoMotorista = fotoMotorista;
+		this.genero = genero;
 	}
-
 
 	public Long getId() {
 		return id;
@@ -49,29 +57,38 @@ public class Motorista {
 		this.id = id;
 	}
 
-	public String getPlaca() {
-		return placa;
+	public String getNomeMotorista() {
+		return nomeMotorista;
 	}
 
-	public void setPlaca(String placa) {
-		this.placa = placa;
+	public void setNomeMotorista(String nomeMotorista) {
+		this.nomeMotorista = nomeMotorista;
 	}
 
-	public String getCor() {
-		return cor;
+	public Calendar getDataNascimento() {
+		return dataNascimento;
 	}
 
-	public void setCor(String cor) {
-		this.cor = cor;
+	public void setDataNascimento(Calendar dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
-	public int getAno() {
-		return ano;
+	public byte[] getFotoMotorista() {
+		return fotoMotorista;
 	}
 
-	public void setAno(int ano) {
-		this.ano = ano;
+	public void setFotoMotorista(byte[] fotoMotorista) {
+		this.fotoMotorista = fotoMotorista;
 	}
+
+	public String getGenero() {
+		return genero;
+	}
+
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	
 	
 	
 }
